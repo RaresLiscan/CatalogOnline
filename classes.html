@@ -1,16 +1,20 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <title>Catalog Online</title>
+</head>
+<body>
+    <div id="classes"></div>
+    <p>classes.html</p>
+    <a href="student.html">student.html</a>
 
+    <!-- Scripts -->
+    <script src="scripts/classes.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-app.js"></script>
-
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
     <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-analytics.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-firestore.js"></script>
-
     <script>
         // Your web app's Firebase configuration
         var firebaseConfig = {
@@ -26,26 +30,12 @@
         // Initialize Firebase
         firebase.initializeApp(firebaseConfig);
         firebase.analytics();
-        firebase.auth();
-        // firebase.auth().onAuthStateChanged(user => {
-        //     if (user) window.location.href = "catalog.html";
+        // firebase.auth().onAuthStateChanged(function (user) {
+        //     if (user) {
+        //         getGrades();
+        //         getAbsences();
+        //     }
         // })
     </script>
-    <title>Catalog Online</title>
-</head>
-
-<body>
-    <p>Autentificare</p>
-    <div>
-        <input type="text" id="userID" placeholder="Numele de utilizator...">
-        <br><br>
-        <input type="password" id="userPassword" placeholder="Parola...">
-        <br><br>
-        <button onclick="login()">Submit</button>
-    </div>
-    <script src="scripts/script.js" type="text/javascript"></script>
-    <script src="scripts/index.js"></script>
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
 </body>
-
 </html>
