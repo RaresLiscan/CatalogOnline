@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Catalog Online</title>
+        <link rel="stylesheet" href="css/catalog.css">
+    </head>
+    <body>
+        <div id="catalog"></div>
+        <!-- Scripts -->
+        <script src="scripts/catalog.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-firestore.js"></script>
+        <script>
+            // Your web app's Firebase configuration
+            var firebaseConfig = {
+                apiKey: "AIzaSyDVQuHY_4u8Q60mjBBwN7osFy8UZFgGiD8",
+                authDomain: "catalog-online-a9e16.firebaseapp.com",
+                databaseURL: "https://catalog-online-a9e16.firebaseio.com",
+                projectId: "catalog-online-a9e16",
+                storageBucket: "",
+                messagingSenderId: "368528571161",
+                appId: "1:368528571161:web:609891cc57f2ee41116388",
+                measurementId: "G-1SNH8QNCY9"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            firebase.analytics();
+            firebase.auth().onAuthStateChanged(function (user) {
+                if (user) {
+                    getGrades();
+                    getAbsences();
+                }
+            })
+        </script>
+    </body>
+</html>
