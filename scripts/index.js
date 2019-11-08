@@ -1,6 +1,7 @@
 function login () {
     let email = document.getElementById("userID").value;
     let password = document.getElementById("userPassword").value;
+    email = email.toUpperCase();
     email += "@cnmv.com";
     firebase.auth().setPersistence(firebase.auth.Auth.Persistence.SESSION)
         .then(() => {

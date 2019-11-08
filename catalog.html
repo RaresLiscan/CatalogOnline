@@ -4,10 +4,724 @@
         <meta charset="UTF-8">
         <title>Catalog Online</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
         <link rel="stylesheet" href="css/catalog.css">
     </head>
     <body>
+
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary" style="	background-image: linear-gradient(to bottom, #439fe0, #439fe0);	background-position: top left;	background-size: 100%;	background-repeat: repeat;">
+            <div class="container"> <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar18">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse" id="navbar18"> <a class="navbar-brand d-none d-md-block" href="#">
+                    <i class="fa d-inline fa-lg fa-circle"></i>
+                    <b> Catalog Online CNMV<br></b>
+                </a>
+                    <ul class="navbar-nav mx-auto"></ul>
+                    <a href="#">
+                        <p class="btn btn-navbar" style="margin-bottom: 0%" onclick="logout()">Delogare</p>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- CATALOG -->
         <div id="catalog"></div>
+        <h1 class="text-center" style="margin: 1%">Semestrul I</h1>
+        <div class="container" style="margin-top: 2%">
+
+            <div class="row">
+                <div class="col-md-4 col-xl-4 col-lg-4 col-sm-12">
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th class="text-center">LIMBA SI LITERATURA ROMANA</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr>
+                                <th>Note</th>
+                                <th>Absente</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>10/20.10</td>
+                                <td>24.10</td>
+                            </tr>
+                            <tr>
+                                <td>10/20.10</td>
+                                <td>24.10</td>
+                            </tr>
+                            <tr>
+                                <td>10/20.10</td>
+                                <td>24.10</td>
+                            </tr>
+                            <tr>
+                                <td>10/20.10</td>
+                                <td>24.10</td>
+                            </tr>
+                            <tr>
+                                <td>10/20.10</td>
+                            </tr>
+                            <tr>
+                                <td>10/20.10</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <table class="table table-bordered">
+                            <tbody>
+                            <tr>
+                                <td>Teza</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>Medie</td>
+                                <td>10</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="col-md-4 col-xl-4 col-lg-4 col-sm-12">
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th class="text-center">LIMBA ENGLEZA</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr>
+                                <th>Note</th>
+                                <th>Absente</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>10/20.10</td>
+                                <td>24.10</td>
+                            </tr>
+                            <tr>
+                                <td>10/20.10</td>
+                                <td>24.10</td>
+                            </tr>
+                            <tr>
+                                <td>10/20.10</td>
+                                <td>24.10</td>
+                            </tr>
+                            <tr>
+                                <td>10/20.10</td>
+                                <td>24.10</td>
+                            </tr>
+                            <tr>
+                                <td>10/20.10</td>
+                            </tr>
+                            <tr>
+                                <td>10/20.10</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <table class="table table-bordered">
+                            <tbody>
+                            <tr>
+                                <td>Teza</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>Medie</td>
+                                <td>10</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="col-md-4 col-xl-4 col-lg-4 col-sm-12">
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th class="text-center">LIMBA FRANCEZA</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr>
+                                <th>Note</th>
+                                <th>Absente</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>10/20.10</td>
+                                <td>24.10</td>
+                            </tr>
+                            <tr>
+                                <td>10/20.10</td>
+                                <td>24.10</td>
+                            </tr>
+                            <tr>
+                                <td>10/20.10</td>
+                                <td>24.10</td>
+                            </tr>
+                            <tr>
+                                <td>10/20.10</td>
+                                <td>24.10</td>
+                            </tr>
+                            <tr>
+                                <td>10/20.10</td>
+                            </tr>
+                            <tr>
+                                <td>10/20.10</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <table class="table table-bordered">
+                            <tbody>
+                            <tr>
+                                <td>Teza</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Medie</td>
+                                <td>10</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" style="margin-top: 2%">
+
+            <div class="row">
+                <div class="col-md-4 col-xl-4 col-lg-4 col-sm-12">
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th class="text-center">LIMBA SI LITERATURA ROMANA</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr>
+                                <th>Note</th>
+                                <th>Absente</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>10/20.10</td>
+                                <td>24.10</td>
+                            </tr>
+                            <tr>
+                                <td>10/20.10</td>
+                                <td>24.10</td>
+                            </tr>
+                            <tr>
+                                <td>10/20.10</td>
+                                <td>24.10</td>
+                            </tr>
+                            <tr>
+                                <td>10/20.10</td>
+                                <td>24.10</td>
+                            </tr>
+                            <tr>
+                                <td>10/20.10</td>
+                            </tr>
+                            <tr>
+                                <td>10/20.10</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <table class="table table-bordered">
+                            <tbody>
+                            <tr>
+                                <td>Teza</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>Medie</td>
+                                <td>10</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="col-md-4 col-xl-4 col-lg-4 col-sm-12">
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th class="text-center">LIMBA ENGLEZA</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr>
+                                <th>Note</th>
+                                <th>Absente</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>10/20.10</td>
+                                <td>24.10</td>
+                            </tr>
+                            <tr>
+                                <td>10/20.10</td>
+                                <td>24.10</td>
+                            </tr>
+                            <tr>
+                                <td>10/20.10</td>
+                                <td>24.10</td>
+                            </tr>
+                            <tr>
+                                <td>10/20.10</td>
+                                <td>24.10</td>
+                            </tr>
+                            <tr>
+                                <td>10/20.10</td>
+                            </tr>
+                            <tr>
+                                <td>10/20.10</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <table class="table table-bordered">
+                            <tbody>
+                            <tr>
+                                <td>Teza</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>Medie</td>
+                                <td>10</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="col-md-4 col-xl-4 col-lg-4 col-sm-12">
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th class="text-center">LIMBA FRANCEZA</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr>
+                                <th>Note</th>
+                                <th>Absente</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>10/20.10</td>
+                                <td>24.10</td>
+                            </tr>
+                            <tr>
+                                <td>10/20.10</td>
+                                <td>24.10</td>
+                            </tr>
+                            <tr>
+                                <td>10/20.10</td>
+                                <td>24.10</td>
+                            </tr>
+                            <tr>
+                                <td>10/20.10</td>
+                                <td>24.10</td>
+                            </tr>
+                            <tr>
+                                <td>10/20.10</td>
+                            </tr>
+                            <tr>
+                                <td>10/20.10</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <table class="table table-bordered">
+                            <tbody>
+                            <tr>
+                                <td>Teza</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Medie</td>
+                                <td>10</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <h1 class="text-center" style="margin: 1%">Semestrul II</h1>
+        <div class="container" style="margin-top: 2%">
+
+            <div class="row">
+                <div class="col-md-4 col-xl-4 col-lg-4 col-sm-12">
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th class="text-center">LIMBA SI LITERATURA ROMANA</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr>
+                                <th>Note</th>
+                                <th>Absente</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>10/20.10</td>
+                                <td>24.10</td>
+                            </tr>
+                            <tr>
+                                <td>10/20.10</td>
+                                <td>24.10</td>
+                            </tr>
+                            <tr>
+                                <td>10/20.10</td>
+                                <td>24.10</td>
+                            </tr>
+                            <tr>
+                                <td>10/20.10</td>
+                                <td>24.10</td>
+                            </tr>
+                            <tr>
+                                <td>10/20.10</td>
+                            </tr>
+                            <tr>
+                                <td>10/20.10</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <table class="table table-bordered">
+                            <tbody>
+                            <tr>
+                                <td>Teza</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>Medie</td>
+                                <td>10</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="col-md-4 col-xl-4 col-lg-4 col-sm-12">
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th class="text-center">LIMBA ENGLEZA</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr>
+                                <th>Note</th>
+                                <th>Absente</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>10/20.10</td>
+                                <td>24.10</td>
+                            </tr>
+                            <tr>
+                                <td>10/20.10</td>
+                                <td>24.10</td>
+                            </tr>
+                            <tr>
+                                <td>10/20.10</td>
+                                <td>24.10</td>
+                            </tr>
+                            <tr>
+                                <td>10/20.10</td>
+                                <td>24.10</td>
+                            </tr>
+                            <tr>
+                                <td>10/20.10</td>
+                            </tr>
+                            <tr>
+                                <td>10/20.10</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <table class="table table-bordered">
+                            <tbody>
+                            <tr>
+                                <td>Teza</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>Medie</td>
+                                <td>10</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="col-md-4 col-xl-4 col-lg-4 col-sm-12">
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th class="text-center">LIMBA FRANCEZA</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr>
+                                <th>Note</th>
+                                <th>Absente</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>10/20.10</td>
+                                <td>24.10</td>
+                            </tr>
+                            <tr>
+                                <td>10/20.10</td>
+                                <td>24.10</td>
+                            </tr>
+                            <tr>
+                                <td>10/20.10</td>
+                                <td>24.10</td>
+                            </tr>
+                            <tr>
+                                <td>10/20.10</td>
+                                <td>24.10</td>
+                            </tr>
+                            <tr>
+                                <td>10/20.10</td>
+                            </tr>
+                            <tr>
+                                <td>10/20.10</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <table class="table table-bordered">
+                            <tbody>
+                            <tr>
+                                <td>Teza</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Medie</td>
+                                <td>10</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" style="margin-top: 2%">
+
+            <div class="row">
+                <div class="col-md-4 col-xl-4 col-lg-4 col-sm-12">
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th class="text-center">LIMBA SI LITERATURA ROMANA</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr>
+                                <th>Note</th>
+                                <th>Absente</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>10/20.10</td>
+                                <td>24.10</td>
+                            </tr>
+                            <tr>
+                                <td>10/20.10</td>
+                                <td>24.10</td>
+                            </tr>
+                            <tr>
+                                <td>10/20.10</td>
+                                <td>24.10</td>
+                            </tr>
+                            <tr>
+                                <td>10/20.10</td>
+                                <td>24.10</td>
+                            </tr>
+                            <tr>
+                                <td>10/20.10</td>
+                            </tr>
+                            <tr>
+                                <td>10/20.10</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <table class="table table-bordered">
+                            <tbody>
+                            <tr>
+                                <td>Teza</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>Medie</td>
+                                <td>10</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="col-md-4 col-xl-4 col-lg-4 col-sm-12">
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th class="text-center">LIMBA ENGLEZA</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr>
+                                <th>Note</th>
+                                <th>Absente</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>10/20.10</td>
+                                <td>24.10</td>
+                            </tr>
+                            <tr>
+                                <td>10/20.10</td>
+                                <td>24.10</td>
+                            </tr>
+                            <tr>
+                                <td>10/20.10</td>
+                                <td>24.10</td>
+                            </tr>
+                            <tr>
+                                <td>10/20.10</td>
+                                <td>24.10</td>
+                            </tr>
+                            <tr>
+                                <td>10/20.10</td>
+                            </tr>
+                            <tr>
+                                <td>10/20.10</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <table class="table table-bordered">
+                            <tbody>
+                            <tr>
+                                <td>Teza</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>Medie</td>
+                                <td>10</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="col-md-4 col-xl-4 col-lg-4 col-sm-12">
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th class="text-center">LIMBA FRANCEZA</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr>
+                                <th>Note</th>
+                                <th>Absente</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>10/20.10</td>
+                                <td>24.10</td>
+                            </tr>
+                            <tr>
+                                <td>10/20.10</td>
+                                <td>24.10</td>
+                            </tr>
+                            <tr>
+                                <td>10/20.10</td>
+                                <td>24.10</td>
+                            </tr>
+                            <tr>
+                                <td>10/20.10</td>
+                                <td>24.10</td>
+                            </tr>
+                            <tr>
+                                <td>10/20.10</td>
+                            </tr>
+                            <tr>
+                                <td>10/20.10</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <table class="table table-bordered">
+                            <tbody>
+                            <tr>
+                                <td>Teza</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Medie</td>
+                                <td>10</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
         <script src="scripts/catalog.js"></script>
         <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-app.js"></script>
         <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-auth.js"></script>
@@ -28,10 +742,10 @@
             firebase.initializeApp(firebaseConfig);
             firebase.analytics();
             firebase.auth().onAuthStateChanged(function (user) {
-                if (user) {
-                    getGrades();
-                    getAbsences();
-                }
+                // if (user) {
+                //     getGrades();
+                //     getAbsences();
+                // }
             })
         </script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

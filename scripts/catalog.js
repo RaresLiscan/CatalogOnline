@@ -1,6 +1,16 @@
 let grades = [];
 let absences = [];
 
+
+function logout() {
+    firebase.auth().signOut()
+        .then(() => {
+            window.location.href = "index.html";
+        })
+        .catch(error => console.log(error));
+}
+
+
 function getGrades () {
     const userID = firebase.auth().currentUser.uid;
     const ref = firebase.firestore().collection('grades');
