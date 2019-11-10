@@ -1,7 +1,4 @@
-let grades = [];
-let absences = [];
-
-
+//Logout from the app and navigate to Login screen
 function logout() {
     firebase.auth().signOut()
         .then(() => {
@@ -10,8 +7,13 @@ function logout() {
         .catch(error => console.log(error));
 }
 
+
+//Get data from Firebase and call "renderTable" function for each class that we get
 async function getData() {
+    //Get the user ID
     const userID = firebase.auth().currentUser.uid;
+
+    //Get all the grades from firebase for the current user
     const gradesRef = firebase.firestore().collection("grades");
     let gradesObj = {};
     await gradesRef.get()
@@ -24,6 +26,8 @@ async function getData() {
             })
         })
         .catch(error => console.log(error));
+
+    //Get all absences from firebase for the current user
     const absencesRef = firebase.firestore().collection("absences");
     let absencesObj = {};
     await absencesRef.get()
@@ -36,6 +40,8 @@ async function getData() {
             })
         })
         .catch(error => console.log(error));
+
+    //Render the tables with the data that we got
     renderTable(gradesObj.romana, absencesObj.romana, "LIMBA SI LIERATURA ROMANA", "sem1");
     renderTable(gradesObj.mate, absencesObj.mate, "MATEMATICA", "sem1");
     renderTable(gradesObj.mate, absencesObj.mate, "MATEMATICA", "sem1");
@@ -51,56 +57,33 @@ async function getData() {
 
 }
 
-
-// function getGrades () {
-//     const userID = firebase.auth().currentUser.uid;
-//     const ref = firebase.firestore().collection('grades');
-//     ref.get()
-//         .then((response) => {
-//             response.forEach(doc => {
-//                 const item = doc.data();
-//                 console.log(item);
-//                 if (item.id.localeCompare(userID) === 0) {
-//                     grades = item;
-//                     renderGrades(item.romana, "Limba si literatura romana", "sem1");
-//                 }
-//             })
-//         })
-//         .catch(error => console.log(error));
-// }
-
-function getAbsences() {
-    const userID = firebase.auth().currentUser.uid;
-    const ref = firebase.firestore().collection('absences');
-    ref.get()
-        .then(response => {
-            response.forEach(doc => {
-                const item = doc.data();
-                if (item.id.localeCompare(userID) === 0) {
-                    absences = item;
-                    renderAbsences(item.romana);
-                }
-            })
-        })
-        .catch(error => console.log(error));
-}
-
+//Render a table for a specific class
 function renderTable (classGrades, classAbsences, className, id) {
+    //The big div that we are going to insert the tables in
     const item = document.getElementById(id);
+    //The column to responsive design
     const I = document.createElement("div");
     I.className = "col-md-6 col-xl-4 col-lg-4 col-sm-12";
+    //The big table
     const tableBig = document.createElement("table");
     tableBig.className = "table table-bordered";
+    //Big table head with the title
     const thead1 = document.createElement("thead");
     const tr1 = document.createElement("tr");
+    //Class title
     const th1 = document.createElement("th");
+    th1.className = "text-center";
     th1.textContent = className;
     tr1.appendChild(th1);
     thead1.appendChild(tr1);
     tableBig.appendChild(thead1);
+
+    //The body of the table with the other dynamic table
     const tbody1 = document.createElement("tbody");
     const table2 = document.createElement("table");
     table2.className = "table table-bordered";
+
+    //The table header with the headings for grades and absences
     const thead2 = document.createElement("thead");
     const tr2 =  document.createElement("tr");
     const th2 = document.createElement("th");
@@ -111,6 +94,8 @@ function renderTable (classGrades, classAbsences, className, id) {
     tr2.appendChild(th3);
     thead2.appendChild(tr2);
     table2.appendChild(thead2);
+
+    //The dynamic content with the grades and absences from firebase
     const tbody2 = document.createElement("tbody");
     var n = classGrades.length, m = classAbsences.length, M = n > m ? n : m;
     for (var i = 0; i < M; i ++) {
@@ -135,34 +120,11 @@ function renderTable (classGrades, classAbsences, className, id) {
         tr3.appendChild(tdAbsences);
         tbody2.appendChild(tr3);
     }
+
+    //Final adds
     table2.appendChild(tbody2);
     tbody1.appendChild(table2);
     tableBig.appendChild(tbody1);
     I.appendChild(tableBig);
     item.appendChild(I);
-    // let p = document.createElement("p");
-    // let name = document.createElement("div");
-    // p.textContent = className;
-    // name.appendChild(p);
-    // item.appendChild(name);
-    // let note = document.createElement("p");
-    // note.textContent = "Note";
-    // item.appendChild(note);
-    // classGrades.forEach(element => {
-    //     var grade = document.createElement("p");
-    //     grade.textContent = element.grade + " " + element.date;
-    //     item.appendChild(grade);
-    // })
-}
-
-function renderAbsences (classAbsences) {
-    const item = document.getElementById("catalog");
-    let p = document.createElement("p");
-    p.textContent = "Absente";
-    item.appendChild(p);
-    classAbsences.forEach(element => {
-        var absence = document.createElement("p");
-        absence.textContent = element;
-        item.appendChild(absence);
-    })
 }

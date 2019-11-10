@@ -723,6 +723,7 @@
 <!--                </div>-->
 <!--            </div>-->
 <!--        </div>-->
+
         <script src="scripts/catalog.js"></script>
         <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-app.js"></script>
         <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-auth.js"></script>
@@ -744,8 +745,6 @@
             firebase.analytics();
             firebase.auth().onAuthStateChanged(function (user) {
                 if (user) {
-                    // getGrades();
-                    // getAbsences();
                     getData();
                 }
             })
