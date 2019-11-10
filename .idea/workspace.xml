@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d157d9d-41c1-4b90-8849-b3f556bbcb9b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/classes.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/catalog.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/catalog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/classes.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/classes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,12 +25,19 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
   <component name="ProjectId" id="1RcQXB1tJhsqU22ZVXOKPeMPCH3" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="full.screen.before.presentation.mode" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -86,7 +91,10 @@
       <workItem from="1570025194671" duration="215000" />
       <workItem from="1570168096975" duration="1741000" />
       <workItem from="1570599548991" duration="29000" />
-      <workItem from="1573240411499" duration="7125000" />
+      <workItem from="1573240411499" duration="7453000" />
+      <workItem from="1573310263121" duration="1025000" />
+      <workItem from="1573398848283" duration="3002000" />
+      <workItem from="1573402916950" duration="3516000" />
     </task>
     <servers />
   </component>
