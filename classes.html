@@ -7,8 +7,6 @@
     <title>Catalog Online</title>
 </head>
 <body>
-    <div id="classes"></div>
-<!--    <p>classes.html</p>-->
 
     <nav class="navbar navbar-expand-md navbar-dark bg-primary" style="	background-image: linear-gradient(to bottom, #439fe0, #439fe0);	background-position: top left;	background-size: 100%;	background-repeat: repeat;">
         <div class="container"> <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar18">
@@ -25,7 +23,117 @@
             </div>
         </div>
     </nav>
-<!--    <a href="student.html">student.html</a>-->
+
+
+    <div class="py-5" id="classes">
+<!--        <div class="container">-->
+<!--            <div class="row">-->
+<!--                <div class="col-md-12">-->
+<!--                    <div class="table-responsive">-->
+<!--                        <table class="table table-bordered ">-->
+<!--                            <thead class="thead-dark">-->
+<!--                                <tr>-->
+<!--                                    <th>Nr</th>-->
+<!--                                    <th style="">Numele clasei</th>-->
+<!--                                    <th>Numar elevi</th>-->
+<!--                                </tr>-->
+<!--                            </thead>-->
+<!--                            <tbody>-->
+<!--                            <tr>-->
+<!--                                <th scope="row">1</th>-->
+<!--                                <td>9A</td>-->
+<!--                                <td>28</td>-->
+<!--                            </tr>-->
+<!--                            <tr>-->
+<!--                                <th scope="row">2</th>-->
+<!--                                <td>9B</td>-->
+<!--                                <td>28</td>-->
+<!--                            </tr>-->
+<!--                            <tr>-->
+<!--                                <th scope="row">3</th>-->
+<!--                                <td>9C</td>-->
+<!--                                <td>28</td>-->
+<!--                            </tr>-->
+<!--                            <tr>-->
+<!--                                <th scope="row">4</th>-->
+<!--                                <td>9D</td>-->
+<!--                                <td>28</td>-->
+<!--                            </tr>-->
+<!--                            <tr>-->
+<!--                                <th scope="row">5</th>-->
+<!--                                <td>10A</td>-->
+<!--                                <td>30</td>-->
+<!--                            </tr>-->
+<!--                            <tr>-->
+<!--                                <th scope="row">6</th>-->
+<!--                                <td>10B</td>-->
+<!--                                <td>28</td>-->
+<!--                            </tr>-->
+<!--                            <tr>-->
+<!--                                <th scope="row">7</th>-->
+<!--                                <td>10C</td>-->
+<!--                                <td>27</td>-->
+<!--                            </tr>-->
+<!--                            <tr>-->
+<!--                                <th scope="row">8</th>-->
+<!--                                <td>10D</td>-->
+<!--                                <td>31</td>-->
+<!--                            </tr>-->
+<!--                            <tr>-->
+<!--                                <th scope="row">9</th>-->
+<!--                                <td>11A</td>-->
+<!--                                <td>29</td>-->
+<!--                            </tr>-->
+<!--                            <tr>-->
+<!--                                <th scope="row">10</th>-->
+<!--                                <td>11B</td>-->
+<!--                                <td>28</td>-->
+<!--                            </tr>-->
+<!--                            <tr>-->
+<!--                                <th scope="row">11</th>-->
+<!--                                <td>11C</td>-->
+<!--                                <td>29</td>-->
+<!--                            </tr>-->
+<!--                            <tr>-->
+<!--                                <th scope="row">12</th>-->
+<!--                                <td>11D</td>-->
+<!--                                <td>29</td>-->
+<!--                            </tr>-->
+<!--                            <tr>-->
+<!--                                <th scope="row">13</th>-->
+<!--                                <td>12A</td>-->
+<!--                                <td>30</td>-->
+<!--                            </tr>-->
+<!--                            <tr>-->
+<!--                                <th scope="row">14</th>-->
+<!--                                <td>12B</td>-->
+<!--                                <td>27</td>-->
+<!--                            </tr>-->
+<!--                            <tr>-->
+<!--                                <th scope="row">15</th>-->
+<!--                                <td>12C</td>-->
+<!--                                <td>20</td>-->
+<!--                            </tr>-->
+<!--                            <tr>-->
+<!--                                <th scope="row">16</th>-->
+<!--                                <td>12D</td>-->
+<!--                                <td>12D</td>-->
+<!--                            </tr>-->
+<!--                            </tbody>-->
+<!--                        </table>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+    </div>
+    <div class="py-5" >
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12" style="width:100%"><a class="btn btn-outline-secondary w-100" href="#" style="width: 100%">+Adauga o clasa</a></div>
+            </div>
+        </div>
+    </div>
+<!--    <a href="students.html">students.html</a>-->
 
     <!-- Scripts -->
     <script src="scripts/classes.js"></script>
@@ -48,12 +156,7 @@
         // Initialize Firebase
         firebase.initializeApp(firebaseConfig);
         firebase.analytics();
-        // firebase.auth().onAuthStateChanged(function (user) {
-        //     if (user) {
-        //         getGrades();
-        //         getAbsences();
-        //     }
-        // })
+        tables();
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>

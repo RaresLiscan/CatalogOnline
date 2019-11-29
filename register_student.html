@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+    <title>Catalog Online</title>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary" style="	background-image: linear-gradient(to bottom, #439fe0, #439fe0);	background-position: top left;	background-size: 100%;	background-repeat: repeat;">
+        <div class="container"> <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar18">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbar18"> <a class="navbar-brand d-none d-md-block" href="#">
+                <i class="fa d-inline fa-lg fa-circle"></i>
+                <b> Catalog Online CNMV<br></b>
+            </a>
+                <ul class="navbar-nav mx-auto"></ul>
+                <a href="#">
+                    <p class="btn btn-navbar" style="margin-bottom: 0%" onclick="logout()">Delogare</p>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- REGISTER FORM -->
+    <div class="form-group">
+        <label for="name">Numele elevului: </label>
+        <input id="name" class="form-control" type="text" placeholder="Numele elevului...">
+        <label for="grade">Anul in care a inceput studiile: </label>
+        <input id="grade" class="form-control" type="number" placeholder="Anul in care a inceput studiile la CNMV...">
+        <label for="userID">Numele de utilizator: </label>
+        <input id="userID" class="form-control" type="text" placeholder="Nume de utilizator...">
+        <label for="password">Numele de utilizator: </label>
+        <input id="password" class="form-control" type="text" placeholder="Parola...">
+        <button type="submit" class="btn btn-primary" onclick="registerStudent()">Creeaza utilizatorul!</button>
+    </div>
+
+    <script src="scripts/register.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-firestore.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyDVQuHY_4u8Q60mjBBwN7osFy8UZFgGiD8",
+            authDomain: "catalog-online-a9e16.firebaseapp.com",
+            databaseURL: "https://catalog-online-a9e16.firebaseio.com",
+            projectId: "catalog-online-a9e16",
+            storageBucket: "",
+            messagingSenderId: "368528571161",
+            appId: "1:368528571161:web:609891cc57f2ee41116388",
+            measurementId: "G-1SNH8QNCY9"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+        firebase.auth();
+        // firebase.auth().onAuthStateChanged(user => {
+        //     if (user) window.location.href = "catalog.html";
+        // })
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>

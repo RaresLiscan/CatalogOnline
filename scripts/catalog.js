@@ -121,9 +121,33 @@ function renderTable (classGrades, classAbsences, className, id) {
         tbody2.appendChild(tr3);
     }
 
+    //Teza si media
+    const table3 = document.createElement("table");
+    table3.className = "table table-bordered";
+    const tbody3 = document.createElement("tbody");
+    const tr3 = document.createElement("tr");
+    const td4 = document.createElement("td");
+    td4.textContent = "Teza";
+    const td5 = document.createElement("td");
+    // td5.textContent = "10";
+    tr3.appendChild(td4);
+    tr3.appendChild(td5);
+    const tr4 = document.createElement("tr");
+    const td6 = document.createElement("td");
+    const td7 = document.createElement("td");
+    td6.textContent = "Medie";
+    // td7.textContent = "10";
+    tr4.appendChild(td6);
+    tr4.appendChild(td7);
+    tbody3.appendChild(tr3);
+    tbody3.appendChild(tr4);
+    table3.appendChild(tbody3);
+
+
     //Final adds
     table2.appendChild(tbody2);
     tbody1.appendChild(table2);
+    tbody1.appendChild(table3);
     tableBig.appendChild(tbody1);
     I.appendChild(tableBig);
     item.appendChild(I);

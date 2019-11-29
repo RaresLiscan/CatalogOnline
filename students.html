@@ -6,8 +6,12 @@
     <title>Catalog Online</title>
 </head>
 <body>
+<!-- WHEN YOU LOGGED IN AS AN ADMIN, YOU CAN SEE THE STUDENTS FROM YOUR SCHOOL SO YOU WILL BE ABLE TO ADD NEW GRADES -->
     <div id="student"></div>
+    <a href="register_student.html">Inregistreaza un elev</a>
     <p>student.html</p>
+
+    <a href = "classes.html">Lista claselor</a>
 
     <!-- Scripts -->
     <script src="scripts/student.js"></script>
@@ -30,12 +34,6 @@
         // Initialize Firebase
         firebase.initializeApp(firebaseConfig);
         firebase.analytics();
-        // firebase.auth().onAuthStateChanged(function (user) {
-        //     if (user) {
-        //         getGrades();
-        //         getAbsences();
-        //     }
-        // })
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>

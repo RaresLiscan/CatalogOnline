@@ -8,7 +8,7 @@ function login () {
             return firebase.auth().signInWithEmailAndPassword(email, password)
                 .then(() => {
                     if (email.substring(0, 4).localeCompare("CNMV") === 0) window.location.href = "catalog.html";
-                    else window.location.href = "classes.html";
+                    else window.location.href = "students.html";
                 })
                 .catch(error => {
                     console.log(error);
